@@ -7,11 +7,11 @@
 \usepackage[usenames]{color}
 \usepackage{hyperref}
 
-\leftmargin=0.25in
-\oddsidemargin=0.25in
-\textwidth=6.0in
-\topmargin=-0.25in
-\textheight=9.25in
+\leftmargin=6mm
+\oddsidemargin=6mm
+\textwidth=150mm
+\topmargin=-6mm
+\textheight=235mm
 
 \raggedright
 
@@ -33,7 +33,7 @@
 }
 
 \newcommand{\lineover}{
-	\begin{changemargin}{-0.05in}{-0.05in}
+	\begin{changemargin}{-1mm}{-1mm}
 		\vspace*{-8pt}
 		\hrulefill \\
 		\vspace*{-2pt}
@@ -41,14 +41,14 @@
 }
 
 \newcommand{\header}[1]{
-	\begin{changemargin}{-0.5in}{-0.5in}
+	\begin{changemargin}{-12mm}{-12mm}
 		\scshape{#1}\\
   	\lineover
 	\end{changemargin}
 }
 
 \newcommand{\contact}[4]{
-	\begin{changemargin}{-0.5in}{-0.5in}
+	\begin{changemargin}{-12mm}{-12mm}
 		\begin{center}
 			{\Large \scshape {#1}}\\ \smallskip
 			{#2}\\ \smallskip 
@@ -60,7 +60,7 @@
 
 \newenvironment{body} {
 	\vspace*{-16pt}
-	\begin{changemargin}{-0.25in}{-0.5in}
+	\begin{changemargin}{-6mm}{-12mm}
   }	
 	{\end{changemargin}
 }	
