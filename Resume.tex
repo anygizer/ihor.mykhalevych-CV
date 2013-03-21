@@ -35,50 +35,50 @@
 }
 
 \newcommand{\lineover}{
-	\begin{changemargin}{-1mm}{-1mm}
-		\vspace*{-8pt}
-		\hrulefill \\
-		\vspace*{-2pt}
-	\end{changemargin}
+  \begin{changemargin}{-1mm}{-1mm}
+    \vspace*{-8pt}
+    \hrulefill \\
+    \vspace*{-2pt}
+  \end{changemargin}
 }
 
 \newcommand{\header}[1]{
-	\begin{changemargin}{-12mm}{-12mm}
-		\scshape{#1}\\
-  	\lineover
-	\end{changemargin}
+  \begin{changemargin}{-12mm}{-12mm}
+    \scshape{#1}\\
+    \lineover
+  \end{changemargin}
 }
 
 \NewDocumentCommand \contact {m g g g g} {
-	\begin{changemargin}{-12mm}{-12mm}
-	    \begin{minipage}[t]{0.5\textwidth + 7mm}\vspace{0mm}
-            \begin{flushleft}
-                {\Huge \scshape {#1}}
-            \end{flushleft}
-        \end{minipage}\hspace{10mm}%
-        \begin{minipage}[t]{0.5\textwidth + 7mm}\vspace{0mm}
-            \begin{flushright}
-                {#2}
-			    \IfValueT {#3} {\\{#3}}
-			    \IfValueT {#4} {\\{#4}}
-			    \IfValueT {#5} {\\{#5}}
-            \end{flushright}
-        \end{minipage}
-        \vspace{1ex}
-	\end{changemargin}
+  \begin{changemargin}{-12mm}{-12mm}
+    \begin{minipage}[t]{0.5\textwidth + 7mm}\vspace{0mm}
+      \begin{flushleft}
+        {\Huge \scshape {#1}}
+      \end{flushleft}
+    \end{minipage}\hspace{10mm}%
+    \begin{minipage}[t]{0.5\textwidth + 7mm}\vspace{0mm}
+      \begin{flushright}
+        {#2}
+        \IfValueT {#3} {\\{#3}}
+        \IfValueT {#4} {\\{#4}}
+        \IfValueT {#5} {\\{#5}}
+      \end{flushright}
+    \end{minipage}
+    \vspace{1ex}
+  \end{changemargin}
 }
 
-\newenvironment{body} {
-	\vspace*{-16pt}
-	\begin{changemargin}{-6mm}{-12mm}
-  }	
-	{\end{changemargin}
-}	
+\newenvironment{body}{
+  \vspace*{-16pt}
+  \begin{changemargin}{-6mm}{-12mm}
+}{
+  \end{changemargin}
+} 
 
 \newcommand{\school}[4]{
-	\textbf{#1} \hfill \emph{#2\\}
-	#3\\ 
-	#4\\
+  \textbf{#1} \hfill \emph{#2\\}
+  #3\\ 
+  #4\\
 }
 
 % END RESUME DEFINITIONS
@@ -96,18 +96,18 @@
 \header{Education}
 
 \begin{body}
-	\vspace{14pt}
-	\textbf{M.S. in Informatics} \hfill \emph{2012 - 2013(expected)} \\
-	\emph{Ivan Franko National University of Lviv} \\
+  \vspace{14pt}
+  \textbf{M.S. in Informatics} \hfill \emph{2012 - 2013(expected)} \\
+  \emph{Ivan Franko National University of Lviv} \\
   \medskip
-	\textbf{B.S. in Informatics} \hfill \emph{2008 - 2012} \\
-	\emph{Ivan Franko National University of Lviv} \\
+  \textbf{B.S. in Informatics} \hfill \emph{2008 - 2012} \\
+  \emph{Ivan Franko National University of Lviv} \\
   \medskip
-	\textbf{Member of MASU} \hfill \emph{2006 - 2008} \\
-	\emph{Minor Academy of Sciences of Ukraine} \\
+  \textbf{Member of MASU} \hfill \emph{2006 - 2008} \\
+  \emph{Minor Academy of Sciences of Ukraine} \\
   \medskip
-  	\textbf{High School Diploma} \hfill \emph{2006 - 2008} \\
-	\emph{Lviv Physics and Mathematics Lyceum} \\
+  \textbf{High School Diploma} \hfill \emph{2006 - 2008} \\
+  \emph{Lviv Physics and Mathematics Lyceum} \\
 \end{body}
 
 \smallskip
@@ -118,19 +118,19 @@
 \header{Career History}
 
 \begin{body}
-	\vspace{14pt}
-	\textbf{Software Developer}, \emph{ InterLogic} \hfill \emph{August 2012 - Present}\\
-	\vspace*{-4pt}
-	\begin{itemize} \itemsep -0pt
-		\item Java, Java3D, PHP, MySQL development
-	\end{itemize}
-	\textbf{System Administrator}, \emph{Ukrainian Academic Research Network} \hfill \emph{February 2009 - July 2012}\\
-	\vspace*{-4pt}
-	\begin{itemize} \itemsep -0pt
-		\item Custommer support
-		\item Network administration
-		\item PHP, AJAX development
-	\end{itemize}
+  \vspace{14pt}
+  \textbf{Software Developer}, \emph{ InterLogic} \hfill \emph{August 2012 - Present}\\
+  \vspace*{-4pt}
+  \begin{itemize} \itemsep -0pt
+    \item Java, Java3D, PHP, MySQL development
+  \end{itemize}
+  \textbf{System Administrator}, \emph{Ukrainian Academic Research Network} \hfill \emph{February 2009 - July 2012}\\
+  \vspace*{-4pt}
+  \begin{itemize} \itemsep -0pt
+    \item Custommer support
+    \item Network administration
+    \item PHP, AJAX development
+  \end{itemize}
 
 \end{body}
 
@@ -141,8 +141,8 @@
 \header{Publications}
 
 \begin{body}
-	\vspace{14pt}
-	R. Rykaluk, Y. Tymchuk, I. Mykhalevych. ``\textbf{Features of BUMMEL simulator development workflow}'' (``Особливості організації робочого потоку при програмуванні симулятора BUMMEL''), in \emph{Proceedings of 18th Ukrainian conference on Modern Problems of Applied Mathematics and Computer Science}. p. 136--137, 2012.\\
+  \vspace{14pt}
+  R. Rykaluk, Y. Tymchuk, I. Mykhalevych. ``\textbf{Features of BUMMEL simulator development workflow}'' (``Особливості організації робочого потоку при програмуванні симулятора BUMMEL''), in \emph{Proceedings of 18th Ukrainian conference on Modern Problems of Applied Mathematics and Computer Science}. p. 136--137, 2012.\\
 
 \end{body}
 
@@ -153,10 +153,10 @@
 \header{Skills}
 
 \begin{body}
-	\vspace{14pt}
-	\emph{\textbf{Programming:}}{} Java, Scala, Ruby, Smalltalk, JavaScript, HTML/CSS, \LaTeX, PHP, SQL, Git, TDD\\
-	\medskip
-	\emph{\textbf{Operating Systems:}}{} Mac OS X, Linux, FreeBSD, Solaris, Windows\\
+  \vspace{14pt}
+  \emph{\textbf{Programming:}}{} Java, Scala, Ruby, Smalltalk, JavaScript, HTML/CSS, \LaTeX, PHP, SQL, Git, TDD\\
+  \medskip
+  \emph{\textbf{Operating Systems:}}{} Mac OS X, Linux, FreeBSD, Solaris, Windows\\
 \end{body}
 
 \smallskip
@@ -167,14 +167,14 @@
 \header{Leadership Activities}
 
 \begin{body}
-	\vspace{14pt}
-	\textbf{Manager}, BUMMEL project in Ivan Franko National University of Lviv \hfill{} \emph{Fall 2010 - Present}\\
-	\vspace*{-4pt}
-	\begin{itemize} \itemsep -0pt
-		\item \url{https://github.com/Uko/BUMMEL}
-	\end{itemize}
-	\smallskip
-	\textbf{Founder}, Unikernel Development Team \hfill {} \emph{Spring 2010 - Summer 2012}\\
+  \vspace{14pt}
+  \textbf{Manager}, BUMMEL project in Ivan Franko National University of Lviv \hfill{} \emph{Fall 2010 - Present}\\
+  \vspace*{-4pt}
+  \begin{itemize} \itemsep -0pt
+    \item \url{https://github.com/Uko/BUMMEL}
+  \end{itemize}
+  \smallskip
+  \textbf{Founder}, Unikernel Development Team \hfill {} \emph{Spring 2010 - Summer 2012}\\
 \end{body}
 
 
