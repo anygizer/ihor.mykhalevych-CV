@@ -1,6 +1,12 @@
+env:
+  global:
+    - secure: "dvv8sCSs+44t7KixGwUQrpGW1HMETMSrSaZBhlPo/f8QFEfVamEhblXPqLbZ\n1CqFxMr1CJTjrwnSrgjphKI0Lbav0ILoLJaszmsnWpQ+CF2a9PGGXBDJBLsR\nhOgd6vBa3EdUp5tyHB0/58Il2V7Rl2BdoKqje0vaV672zpA9jJw="
+
 install:
   - yes "" | sudo apt-add-repository ppa:texlive-backports/ppa
   - sudo apt-get update
   - sudo apt-get install texlive-xetex texlive-latex-recommended texlive-latex-extra texlive-lang-cyrillic
 
 script: make
+
+after_success: .utility/update-gh-pages.sh
