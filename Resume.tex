@@ -6,11 +6,13 @@
 \usepackage{amssymb}
 \usepackage[usenames]{color}
 \usepackage{hyperref}
+\usepackage{calc}
+\usepackage{xparse}
 
 \leftmargin=6mm
 \oddsidemargin=6mm
 \textwidth=150mm
-\topmargin=-6mm
+\topmargin=-10mm
 \textheight=235mm
 
 \raggedright
@@ -47,14 +49,22 @@
 	\end{changemargin}
 }
 
-\newcommand{\contact}[4]{
+\NewDocumentCommand \contact {m g g g g} {
 	\begin{changemargin}{-12mm}{-12mm}
-		\begin{center}
-			{\Large \scshape {#1}}\\ \smallskip
-			{#2}\\ \smallskip 
-			{#3}\\ \smallskip
-			{#4}\smallskip
-		\end{center}
+	    \begin{minipage}[t]{0.5\textwidth + 7mm}\vspace{0mm}
+            \begin{flushleft}
+                {\Huge \scshape {#1}}
+            \end{flushleft}
+        \end{minipage}\hspace{10mm}%
+        \begin{minipage}[t]{0.5\textwidth + 7mm}\vspace{0mm}
+            \begin{flushright}
+                {#2}
+			    \IfValueT {#3} {\\{#3}}
+			    \IfValueT {#4} {\\{#4}}
+			    \IfValueT {#5} {\\{#5}}
+            \end{flushright}
+        \end{minipage}
+        \vspace{1ex}
 	\end{changemargin}
 }
 
@@ -77,7 +87,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Name
-\contact{Yuriy Tymchuk}{yuriy.tymchuk@unikernel.net}{\hspace*{\fill}}
+\contact{Yuriy Tymchuk}{Lviv, Ukraine}{yuriy.tymchuk@unikernel.net}
 
 
 
