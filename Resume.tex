@@ -59,10 +59,13 @@
     \end{minipage}\hspace{10mm}%
     \begin{minipage}[t]{0.5\textwidth + 7mm}\vspace{0mm}
       \begin{flushright}
-        {#2}
-        \IfValueT {#3} {\\{#3}}
-        \IfValueT {#4} {\\{#4}}
-        \IfValueT {#5} {\\{#5}}
+        \IfValueT {#2} {{#2}}
+        
+        \IfValueT {#3} {{#3}}
+        
+        \IfValueT {#4} {{#4}}
+        
+        \IfValueT {#5} {{#5}}
       \end{flushright}
     \end{minipage}
     \vspace{1ex}
@@ -127,7 +130,7 @@
 
 \begin{body}
   \vspace{14pt}
-  \textbf{Software Developer}, \emph{ InterLogic} \hfill \emph{August 2012 - Present}\\
+  \textbf{Software Developer}, \emph{InterLogic} \hfill \emph{August 2012 - Present}\\
   \vspace*{-4pt}
   \begin{itemize} \itemsep -0pt
     \item Development of web applet for modeling ventilation systems in 3D.
