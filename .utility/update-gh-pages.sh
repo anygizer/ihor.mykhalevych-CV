@@ -6,7 +6,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   cd $HOME
   git config --global user.email "travis@travis-ci.org"
   git config --global user.name "Travis"
-  git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/Uko/yuriy.tymchuk-CV.git  gh-pages > /dev/null
+  git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git  gh-pages > /dev/null
 
   cd gh-pages
   cp -f $HOME/Resume.pdf Resume.pdf
